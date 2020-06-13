@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminUserProductActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="Produk pesanan"
+        app:titleTextColor="@android:color/white"
+        android:id="@+id/toolbar_order"
+        android:background="@color/colorPrimaryDark">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DEDFDF"
+        android:layout_below="@+id/toolbar_order"
+        android:layout_above="@+id/total_harga">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

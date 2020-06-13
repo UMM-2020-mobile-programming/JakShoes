@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "701618723503",
+    "firebase_url": "https://tugbes-mobile-ecommerce.firebaseio.com",
+    "project_id": "tugbes-mobile-ecommerce",
+    "storage_bucket": "tugbes-mobile-ecommerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701618723503:android:63478d4bb495877f46525a",
+        "android_client_info": {
+          "package_name": "com.example.tugbes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701618723503-34ucv9fgim1jp7ur17chribcnb2blur4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tugbes",
+            "certificate_hash": "a3d23c3ee96219e3369799682a3a821cb759e5e5"
+          }
+        },
+        {
+          "client_id": "701618723503-l5p20luup3t4enruiga7ef3iafr24ncj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBtE0gAgawGRNp0ORZ1qzNLe6y1o0ob8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701618723503-l5p20luup3t4enruiga7ef3iafr24ncj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

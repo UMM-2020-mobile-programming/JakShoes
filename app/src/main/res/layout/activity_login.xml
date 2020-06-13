@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_above="@id/login_input_nohp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_input_nohp"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="12dp"
+        android:layout_centerInParent="true"
+        android:hint="Nomor Telepone"
+        android:drawableStart="@drawable/custom_phone_icon"
+        android:inputType="number"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/custom_input"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:id="@+id/login_input_password"
+        android:padding="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/login_input_nohp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawablePadding="12dp"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/custom_input"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout_1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_input_password"
+        android:layout_marginTop="8dp">
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/ingat_saya"
+            style="@style/Material.Drawable.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="17dp"
+            android:gravity="center_vertical"
+            android:text="Ingat saya"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cbd_strokeColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lupa_password_link"
+            android:text="Lupa Password?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="140dp"
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:layout_below="@+id/linear_layout_1"
+        android:background="@drawable/buttons"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Login"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_link"
+        android:text="Saya Admin?"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/login_login_btn"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bukan_admin_link"
+        android:text="Saya bukan Admin?"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_login_btn"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="25dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
